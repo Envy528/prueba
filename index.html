@@ -66,5 +66,18 @@
             </tr>
         </tbody>
     </table>
+    <!--Formulario-->
+    <form action="#"> <!--Seccion de formulario-->
+        <label for="nombre">Nombre:</label> <!--Label es el texto que aparece cerca de la caja donde se meten los datos-->
+            <input type="text" name="nombre_usuario" id="nombre" minlength="3" maxlength="30" required> <!--La caja donde metes los datos-->
+
+            <label for="mensaje">Motivo de contacto:</label>
+            <textarea name="mensaje" id="mensaje" rows="4"></textarea> <!--Una caja de datos especifica para texto-->
+
+            <label for="correo">Correo:</label>
+            <input type="email" name="correo_usuario" id="correo">
+        
+            <input type="submit" value="Enviar información"> <!--El boton de enviar-->
+    </form>
 </body>
 </html>
