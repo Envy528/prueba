@@ -4,80 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Titulo de la pagina</h1>
-    <h2>Subtitulo de la pagina</h2>
-    <p>Parrafo del lo que sea de la pagina</p>
-    <img src="./img/Bandera.png" alt="Bandera de colombia">
-    <a href="https://es.wikipedia.org/wiki/Colombia#Historia">Historia de Colombia</a>
-    <h3>Sitios turisticos</h3>
-    <ul> <!--Unorganized List-->
-        <li>Parque noseque</li> <!--List Item-->
-        <li>wasaa</li>
-        <li>aeg</li>
-    </ul>
-    <h3>Principales Ciudades</h3>
-    <ol> <!--Organized List-->
-        <li>Bogota</li>
-        <li>Medellin</li>
-        <li>Cali</li>
-    </ol>
-    <h3>Horario</h3>
-    <table border="1">
-        <thead><!--Table Head-->
-            <tr> <!--Table Row-->
-                <th>Lunes</th> <!--Table Header-->
-                <th>Martes</th>
-                <th>Miercoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-                <th>Sabado</th>
-                <th>Domingo</th>
-            </tr>
-        </thead>
-        <tbody><!--Table Body-->
-            <tr>
-                <td>F1-C1</td>
-                <td>F1-C2</td>
-                <td>F1-C3</td>
-                <td>F1-C4</td>
-                <td>F1-C5</td>
-                <td>F1-C6</td>
-                <td>F1-C7</td>
-            </tr>
-            <tr>
-                <td>F2-C1</td>
-                <td>F2-C2</td>
-                <td>F2-C3</td>
-                <td>F2-C4</td>
-                <td>F2-C5</td>
-                <td>F2-C6</td>
-                <td>F2-C7</td>
-            </tr>
-            <tr>
-                <td>F3-C1</td>
-                <td>F3-C2</td>
-                <td>F3-C3</td>
-                <td>F3-C4</td>
-                <td>F3-C5</td>
-                <td>F3-C6</td>
-                <td>F3-C7</td>
-            </tr>
-        </tbody>
-    </table>
-    <!--Formulario-->
-    <form action="#"> <!--Seccion de formulario-->
-        <label for="nombre">Nombre:</label> <!--Label es el texto que aparece cerca de la caja donde se meten los datos-->
-            <input type="text" name="nombre_usuario" id="nombre" minlength="3" maxlength="30" required> <!--La caja donde metes los datos-->
-
-            <label for="mensaje">Motivo de contacto:</label>
-            <textarea name="mensaje" id="mensaje" rows="4"></textarea> <!--Una caja de datos especifica para texto-->
-
-            <label for="correo">Correo:</label>
-            <input type="email" name="correo_usuario" id="correo">
+    <!--Header-->
+    <header>
+        <h1>Titulo de la pagina</h1>
+        <h2>Subtitulo de la pagina</h2>    
+    </header>
+    <!--Navegador-->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#sitios">Sitios turisticos</a>
+        <a href="#ciudades">Principales Ciudades</a>
+        <a href="#tabla">Tabla</a>
+        <a href="#formulario">Formulario</a>
+    </nav>
+    
+    <!--Contenido-->
+    <main>
+        <!--Introducción-->
+        <div class="contenedor">
+            <h3>Introducción</h3>
+            <p>Parrafo del lo que sea de la pagina</p>
+            <img src="./img/Bandera.png" alt="Bandera de colombia">
+            <a href="https://es.wikipedia.org/wiki/Colombia#Historia">Historia de Colombia</a>
+        </div>
+        <!--Sitios Turisticos-->
+        <div class="contenedor">
+        <h3 id="sitios">Sitios turisticos</h3>
+        <ul> <!--Unorganized List-->
+            <li>Parque noseque</li> <!--List Item-->
+            <li>wasaa</li>
+            <li>aeg</li>
+        </ul>
+        </div>
+        <!--Principales Ciudades-->
+        <div class="contenedor">
+        <h3 id="ciudades">Principales Ciudades</h3>
+            <ol> <!--Organized List-->
+                <li>Bogota</li>
+                <li>Medellin</li>
+                <li>Cali</li>
+            </ol>
+        </div>
+        <!--Tabla-->
+        <div class="contenedor">
+        <h3 id="tabla">Horario</h3>
+        <table border="1">
+            <thead><!--Table Head-->
+                    <tr> <!--Table Row-->
+                        <th>Lunes</th> <!--Table Header-->
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sabado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
+                <tbody><!--Table Body-->
+                    <tr>
+                        <td>F1-C1</td>
+                        <td>F1-C2</td>
+                        <td>F1-C3</td>
+                        <td>F1-C4</td>
+                        <td>F1-C5</td>
+                        <td>F1-C6</td>
+                        <td>F1-C7</td>
+                    </tr>
+                    <tr>
+                        <td>F2-C1</td>
+                        <td>F2-C2</td>
+                        <td>F2-C3</td>
+                        <td>F2-C4</td>
+                        <td>F2-C5</td>
+                        <td>F2-C6</td>
+                        <td>F2-C7</td>
+                    </tr>
+                    <tr>
+                        <td>F3-C1</td>
+                        <td>F3-C2</td>
+                        <td>F3-C3</td>
+                        <td>F3-C4</td>
+                        <td>F3-C5</td>
+                        <td>F3-C6</td>
+                        <td>F3-C7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
-            <input type="submit" value="Enviar información"> <!--El boton de enviar-->
-    </form>
+        <!--Formulario-->
+        <div class="formulario">
+            <h3 id="formulario">Formulario de contacto</h3>
+            <form action="#"> <!--Seccion de formulario-->
+                <label for="nombre">Nombre:</label> <!--Label es el texto que aparece cerca de la caja donde se meten los datos-->
+                    <input type="text" name="nombre_usuario" id="nombre" minlength="3" maxlength="30" required> <!--La caja donde metes los datos-->
+
+                    <label for="mensaje">Motivo de contacto:</label>
+                    <textarea name="mensaje" id="mensaje" rows="4"></textarea> <!--Una caja de datos especifica para texto-->
+                
+                    <label for="correo">Correo:</label>
+                    <input type="email" name="correo_usuario" id="correo">
+
+                    <input type="submit" value="Enviar información"> <!--El boton de enviar-->
+            </form>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <small>Derechos reservados © 2024</small>
+    </footer>
 </body>
 </html>
